@@ -9,9 +9,11 @@ ENV DD_GIT_COMMIT_SHA=${GIT_COMMIT}
 ENV DD_GIT_REPOSITORY_URL="github.com/hlynbech2/henrik-test-datadog-repo-integration2"
 
 WORKDIR /app
+
 COPY package.json .
+RUN npm install
+
 COPY server.js .
 
-RUN npm install
 
 CMD ["node", "server.js"]
