@@ -17,6 +17,7 @@ async function run () {
     }
 
     function f3(){
+        x=y; // this will throw an error since y is not defined, to test error logging in datadog
         myLogger('f3 called');
     }
 
