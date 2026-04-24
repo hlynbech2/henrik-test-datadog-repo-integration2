@@ -9,6 +9,12 @@ async function run() {
       `${new Date().toISOString()} - henriktestserver version ${process.env.GIT_COMMIT} - ${message}`,
     );
   }
+  function myLoggerError(message) {
+    // set SERVER_VERSION to the current git commit hash
+    console.error(
+      `${new Date().toISOString()} - henriktestserver version ${process.env.GIT_COMMIT} - ${message}`,
+    );
+  }
 
   function f1() {
     myLogger("f1 called");
@@ -32,7 +38,7 @@ async function run() {
     try {
       myFunctions[randomIndex]();
     } catch (error) {
-      myLogger(`Error occurred: ${error.stack}`);
+      myLoggerError(`Error occurred: ${error.stack}`);
     }
 
     //wait a random amount of time of a few seconds before calling the next function
