@@ -1,0 +1,24 @@
+{
+  "name": "henrik-test-datadog-repo-integration2",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/hlynbech2/henrik-test-datadog-repo-integration2#readme",
+  "bugs": {
+    "url": "https://github.com/hlynbech2/henrik-test-datadog-repo-integration2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hlynbech2/henrik-test-datadog-repo-integration2.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dd-trace": "5.98.0"
+  }
+}

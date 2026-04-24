@@ -1,3 +1,6 @@
+const tracer = require('dd-trace').init()
+
+
 async function run () {
     
     function myLogger(message) {
