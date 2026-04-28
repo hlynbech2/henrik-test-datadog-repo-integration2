@@ -1,6 +1,6 @@
-const tracer = require("dd-trace").init({
-  hostname: "dd-agent",
-});
+// const tracer = require("dd-trace").init({
+//   hostname: "dd-agent",
+// });
 
 async function run() {
   function myLogger(message) {

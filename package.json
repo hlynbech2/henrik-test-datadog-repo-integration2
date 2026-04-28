@@ -19,6 +19,6 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "dd-trace": "5.98.0"
+  
   }
 }
